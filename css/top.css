@@ -1,0 +1,521 @@
+@charset "UTF-8";
+.sp {
+  display: none;
+}
+/* セクションタイトル */
+.section-title {
+  text-align: left;
+  color: #3d5b7a;
+  margin-bottom: 40px;
+}
+.section-title .en {
+  display: block;
+  flex-wrap: nowrap;
+  color: #76ce83;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.section-title .ja {
+  display: block;
+  font-size: 28px;
+}
+#header .site-title p{
+  display: block;
+}
+#header .site-title span{
+  display: block;
+  padding-left: 20px;
+  
+}
+#header .site-title span:before{
+  display: none;
+}
+/* TOP */
+
+#top {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+#top .text {
+  width: 40%;
+  padding: 4% 3% 0;
+}
+#top .text .catchphrase {
+  color: #3d5b7a;
+  font-size: 2.7vw;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+#top .text .catchphrase span {
+  color: #76ce83;
+}
+#top .text p {
+  line-height: 2;
+  margin-bottom: 30px;
+}
+#top .text .btn-area {
+  display: flex;
+  gap: 20px;
+}
+
+#top .img-area {
+  width: 60%;
+}
+#top .img-area img {
+  border-radius: 200px 0 0 200px;
+}
+#top .deco {
+  position: absolute;
+  bottom: -95px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/* About */
+#about {
+  /* margin-top: 10px; */
+  background-color: #f4f8fb;
+  background-repeat: repeat-x;
+  background-size: cover;
+  width: 100%;
+  padding: 100px 0;
+  position: relative;
+  transition: all 0.5s ease;
+}
+#about .inner {
+  display: flex;
+  justify-content: space-between;
+}
+#about .inner .text {
+  width: 45%;
+  padding-right: 5%;
+}
+#about .inner .text p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+#about .inner .img-area {
+  width: 50%;
+}
+#about .inner .img-area img {
+  border-radius: 25px;
+  filter: drop-shadow(1px 1px 3px #3d5b7a);
+}
+
+/* Pharmacy-atmosphere */
+
+#pharmacy-atmosphere {
+  padding: 80px 20px 40px;
+  background-color: #fbfaf5;
+  display: flex;
+}
+#pharmacy-atmosphere .section-title {
+  padding-left: 10%;
+}
+#pharmacy-atmosphere .img-area ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+#pharmacy-atmosphere .img-area ul img {
+  height: clamp(220px, 18vw, 290px);
+  width: clamp(320px, 26vw, 500px);
+  object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 1px 1px 3px #3d5b7a;
+}
+/* #pharmacy-atmosphere .img-area {
+  margin-left: auto;
+  margin-right: 5%;
+  margin-top: -130px;
+  min-width: 520px;
+  max-width: 900px;
+  width: 60vw;
+  position: relative;
+  flex: 0 1 900px;
+  aspect-ratio: 9 / 5;
+}
+#pharmacy-atmosphere .img-area .img01 {
+  height: clamp(180px, 16vw, 260px);
+  width: clamp(240px, 22vw, 380px);
+  position: absolute;
+  top: 0;
+  left: 38%;
+  z-index: 10;
+}
+#pharmacy-atmosphere .img-area .img02 {
+  width: clamp(240px, 22vw, 380px);
+  height: clamp(180px, 16vw, 260px);
+  position: absolute;
+  top: 52%;
+  right: 0;
+  z-index: 20;
+}
+#pharmacy-atmosphere .img-area .img03 {
+  height: clamp(220px, 22vw, 310px);
+  width: clamp(320px, 32vw, 500px);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 30;
+}
+#pharmacy-atmosphere .img-area img {
+  object-fit: cover;
+  border-radius: 25px;
+  box-shadow: 1px 1px 3px #3d5b7a;
+} */
+
+/* 働き方 */
+
+.center {
+  text-align: center;
+}
+#working {
+  margin-top: 40px;
+}
+#working .flex {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 80px;
+}
+#working .flex .inner-flex {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+#working .pharmacist,
+#working .clark {
+  border: 1px solid #3d5b7a;
+  border-radius: 25px;
+  padding: 3% 10% 3% 2%;
+  position: relative;
+}
+#working .icon {
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 50%;
+  width: 80px;
+}
+#working .text {
+  width: calc(100% - 80px);
+}
+#working .text .job {
+  font-size: 20px;
+  color: #3d5b7a;
+}
+#working .text .description {
+  font-size: 14px;
+}
+#working ul {
+  margin-bottom: 35px;
+}
+#working ul li {
+  margin-bottom: 10px;
+  list-style-image: url(../img/mark.png);
+  list-style-position: inside;
+}
+#working .flex .pharmacist img.profile,
+#working .flex .clark img.profile {
+  height: 200px;
+  width: 100x;
+  object-fit: cover;
+  position: absolute;
+  top: 110px;
+  right: 20px;
+  border-radius: 75% 25px 25px 25px;
+}
+
+#voice {
+  margin-bottom: 80px;
+  padding: 40px 5%;
+  background-color: #f4f8fb;
+}
+#voice .flex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+#voice .flex .inner-flex {
+  display: flex;
+  align-items: center;
+}
+#voice .img-area {
+  max-width: 200px;
+  margin-right: 30px;
+}
+#voice .img-area img {
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+#voice .text {
+  width: calc(100% - 200px);
+  padding: 3% 8%;
+  border: 1px solid #3d5b7a;
+  background-color: #fff;
+  border-radius: 25px;
+  position: relative;
+}
+#voice .text::before {
+  content: "";
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border-top: solid 1px #3d5b7a;
+  border-left: solid 1px #3d5b7a;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 50%;
+  left: -7px;
+  z-index: 10;
+}
+#voice .text .job {
+  font-size: 16px;
+  color: #3d5b7a;
+  margin-bottom: 10px;
+}
+#voice .text p {
+  font-size: 14px;
+}
+/* よくある質問 */
+
+#faq {
+  max-width: 900px;
+  margin: 0 auto 120px;
+}
+.faq-list .item {
+  border: solid 1px #3d5b7a;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+.faq-list .item summary {
+  display: flex;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1.8;
+  padding: 10px 40px;
+  position: relative;
+}
+.faq-list .item summary::before {
+  content: "";
+  width: 15px;
+  height: 1px;
+  background-color: #3d5b7a;
+  position: absolute;
+  top: 27px;
+  right: 30px;
+}
+.faq-list .item summary::after {
+  content: "";
+  width: 1px;
+  height: 15px;
+  background-color: #3d5b7a;
+  position: absolute;
+  top: 20px;
+  right: 36px;
+  left: auto;
+}
+.faq-list .item details[open] summary::after {
+  content: none;
+}
+.faq-list .item details[open] p {
+  animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.faq-list .item summary .question {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-shrink: 0;
+  background-color: #3d5b7a;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 14px;
+  margin-right: 20px;
+}
+.faq-list .item p {
+  display: flex;
+  font-size: 15px;
+  padding: 0 40px 20px;
+
+  line-height: 1.8;
+}
+.faq-list .item a {
+  text-decoration: underline;
+}
+
+.faq-list .item p .answer {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-shrink: 0;
+  border: solid 1px #3d5b7a;
+  border-radius: 50%;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+/* ===================================
+スマホ
+=================================== */
+@media screen and (max-width: 767px) {
+  /* ---------- top ---------- */
+  .sp {
+    display: block;
+  }
+  #top {
+    flex-direction: column;
+  }
+
+  #top .text {
+    width: 100%;
+    order: 2;
+  }
+
+  #top .img-area {
+    width: 100%;
+    order: 1;
+    margin-bottom: 30px;
+  }
+
+  #top .img-area img {
+    border-radius: 0;
+  }
+
+  #top .text .catchphrase {
+    font-size: 2rem;
+  }
+
+  #top .btn-area {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* ---------- about ---------- */
+
+  #about .inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #about .inner .text,
+  #about .inner .img-area {
+    width: 100%;
+  }
+
+  /* ---------- atmosphere ---------- */
+
+  #pharmacy-atmosphere {
+    padding: 60px 20px;
+    flex-direction: column;
+  }
+
+  #pharmacy-atmosphere .section-title {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  #pharmacy-atmosphere .img-area ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+  }
+  #pharmacy-atmosphere .img-area ul img {
+    width: 100%;
+  }
+
+  /* ---------- working ---------- */
+
+  #working .flex {
+    flex-direction: column;
+  }
+
+  #working .pharmacist,
+  #working .clark {
+    width: 100%;
+    padding: 30px;
+  }
+
+  #working .profile {
+    position: static !important;
+    width: 100%;
+    margin-top: 20px;
+  }
+  #working .flex .pharmacist img.profile,
+  #working .flex .clark img.profile {
+    border-radius: 25px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  /* ---------- voice ---------- */
+
+  #voice .flex {
+    grid-template-columns: 1fr;
+  }
+
+  #voice .inner-flex {
+    flex-direction: column;
+  }
+
+  #voice .img-area {
+    margin: 0 auto 20px;
+  }
+
+  #voice .text {
+    width: 100%;
+  }
+
+  #voice .text::before {
+    display: none;
+  }
+
+  /* ---------- faq ---------- */
+
+  .faq-list .item summary {
+    padding: 20px;
+    font-size: 14px;
+  }
+  .faq-list .item summary::before {
+    content: none;
+  }
+  .faq-list .item summary::after {
+    content: none;
+  }
+
+  .faq-list .item p {
+    padding: 0 20px 20px;
+    font-size: 14px;
+  }
+}

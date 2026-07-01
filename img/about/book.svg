@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 3000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 54px;
+      }
+    </style>
+  </defs>
+  <g id="_アイコン" data-name="アイコン">
+    <rect class="cls-1" width="3000" height="3000"/>
+    <g>
+      <path class="cls-2" d="M2400.21,2098.04s-175.21-102.97-450.11-102.97-450.11,102.97-450.11,102.97c0,0-175.21-102.97-450.11-102.97s-450.11,102.97-450.11,102.97V1004.93s175.21-102.97,450.11-102.97,450.11,102.97,450.11,102.97c0,0,175.21-102.97,450.11-102.97s450.11,102.97,450.11,102.97v1093.11Z"/>
+      <line class="cls-2" x1="1500" y1="1004.93" x2="1500" y2="2098.04"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+
+/* セクションタイトル */
+
+.section-title {
+  color: #3d5b7a;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  padding-left: 5%;
+}
+.section-title .img {
+  height: 50px;
+  width: 50px;
+}
+
+.section-title .img img {
+  border-radius: 50%;
+}
+
+.section-title .ja {
+  font-size: 24px;
+  padding-bottom: 11px;
+}
+.recruit-list-area .recruit-list {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #f0f0f0;
+  border-radius: 25px;
+}
+.recruit-list-area .recruit-list dt {
+  width: 20%;
+  padding: 20px 5%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.recruit-list-area .recruit-list dt:first-child {
+  border-top-left-radius: 25px;
+}
+.recruit-list-area .recruit-list dt:last-of-type {
+  border-bottom-left-radius: 25px;
+}
+.recruit-list-area .recruit-list dd {
+  width: 80%;
+  padding: 20px 5%;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+#recruit-pharmacist {
+  margin-bottom: 80px;
+}
+#recruit-pharmacist .recruit-list-area .recruit-list dt {
+  background-color: #3d5b7a;
+}
+
+#recruit-clark {
+  margin-bottom: 80px;
+}
+#recruit-clark .section-title {
+  color: #76ce83;
+}
+
+#recruit-clark .recruit-list-area .recruit-list dt {
+  background-color: #76ce83;
+}
+/* ===================================
+Recruit page SP
+breakpoint: 767px
+=================================== */
+@media screen and (max-width: 767px) {
+  /* セクション全体 */
+  #recruit-pharmacist,
+  #recruit-clark {
+    margin-bottom: 64px;
+  }
+
+  /* セクションタイトル */
+  .section-title {
+    padding-left: 0;
+    margin-bottom: 20px;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .section-title .img {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+  }
+
+  .section-title .ja {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-bottom: 0;
+  }
+
+  /* 募集要項リスト */
+  .recruit-list-area .recruit-list {
+    display: block;
+    border-radius: 10px;
+    border: none;
+  }
+
+  .recruit-list-area .recruit-list dt,
+  .recruit-list-area .recruit-list dd {
+    width: 100%;
+  }
+
+  .recruit-list-area .recruit-list dt {
+    padding: 14px 18px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.6;
+    border-right: 10px;
+    border-bottom: none;
+  }
+
+  .recruit-list-area .recruit-list dd {
+    padding: 18px 18px 22px;
+    font-size: 0.75rem;
+    line-height: 2;
+    background-color: #fff;
+    border-left: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 10px;
+    overflow-wrap: anywhere;
+  }
+
+  /* PC用の角丸を解除 */
+  .recruit-list-area .recruit-list dt:first-child,
+  .recruit-list-area .recruit-list dt:last-of-type {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .recruit-list-area .recruit-list dt {
+    border-radius: 10px 10px 0 0;
+  }
+
+  /* 各項目の見やすさ調整 */
+  .recruit-list-area .recruit-list dd br {
+    display: block;
+  }
+}

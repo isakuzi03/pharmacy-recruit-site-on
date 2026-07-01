@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>くじら薬局 | 採用サイト</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="site-title">
+        <a href="index.html"><img src="img/logo.svg" alt="くじら薬局" /></a>
+        くじら薬局<span>採用サイト</span>
+      </h1>
+      <div
+        class="hamburger"
+        onclick="this.classList.toggle('active'); document.querySelector('#header .main-nav').classList.toggle('active');"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="main-nav">
+        <ul class="menu">
+          <li><a href="about.html">くじら薬局について</a></li>
+          <li><a href="working.html">働き方</a></li>
+          <li>
+            <a class="btn btn-clear" href="recruit.html">募集要項をみる →</a>
+          </li>
+          <li>
+            <a class="btn" href="#entry">エントリーする<span>→</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="page-header">
+        <div class="page-title-area">
+          <h2 class="page-title">
+            <span class="en">ENTRY&CONTACT</span>
+            <span class="ja">エントリー＆お問い合わせ</span>
+          </h2>
+        </div>
+      </div>
+
+      <p class="head-text">
+        エントリーご希望、もしくはご不明点ご質問などございましたら、<br />下記のフォームからお気軽にご応募、お問い合わせをお願いいたします。
+      </p>
+
+      <section class="form-area wrapper">
+        <h3 class="section-title">お問い合わせフォーム</h3>
+        <form action="" method="post">
+          <dl>
+            <div class="item">
+              <dt>種類<span class="require">必須</span></dt>
+              <dd class="radio-group">
+                <div class="top-item-group">
+                  <input
+                    type="radio"
+                    id="entry"
+                    name="kind"
+                    value="エントリー"
+                  />
+                  <label class="tab" for="entry">
+                    <span class="en">ENTRY</span>
+                    <span class="ja">エントリー</span>
+                  </label>
+                </div>
+                <div class="top-item-group">
+                  <input
+                    type="radio"
+                    id="contact"
+                    name="kind"
+                    value="お問い合わせ"
+                  />
+                  <label class="tab" for="contact">
+                    <span class="en">CONTACT</span>
+                    <span class="ja">お問い合わせ</span>
+                  </label>
+                </div>
+              </dd>
+            </div>
+            <div class="item">
+              <dt>
+                <label for="name"
+                  >お名前<span class="require">必須</span></label
+                >
+              </dt>
+              <dd>
+                <input
+                  id="name"
+                  type="text"
+                  name="name"
+                  placeholder="例）山田　太郎"
+                />
+              </dd>
+            </div>
+            <div class="item">
+              <dt>
+                <label for="name-kana"
+                  >フリガナ<span class="require">必須</span></label
+                >
+              </dt>
+              <dd>
+                <input
+                  id="name-kana"
+                  type="text"
+                  name="name-kana"
+                  placeholder="例）ヤマダ タロウ"
+                />
+              </dd>
+            </div>
+
+            <div class="item">
+              <dt>
+                <label for="email"
+                  >メールアドレス<span class="require">必須</span></label
+                >
+              </dt>
+              <dd>
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="例）xxx@kujira.com"
+                />
+              </dd>
+            </div>
+            <div class="item">
+              <dt>
+                <label for="tel"
+                  >電話番号<span class="require">必須</span></label
+                >
+              </dt>
+              <dd>
+                <input
+                  id="tel"
+                  type="text"
+                  name="tel"
+                  placeholder="例）000-0000-0000"
+                />
+              </dd>
+            </div>
+            <div class="item">
+              <dt>希望職種<span class="require">必須</span></dt>
+              <dd class="radio-group">
+                <div class="item-group">
+                  <input
+                    type="radio"
+                    id="pharmacy"
+                    name="kind"
+                    value="薬剤師"
+                  />
+                  <label for="pharmacy"> 薬剤師 </label>
+                </div>
+                <div class="item-group">
+                  <input type="radio" id="clark" name="kind" value="調剤事務" />
+                  <label for="clark"> 調剤事務 </label>
+                </div>
+                <div class="item-group">
+                  <input type="radio" id="other" name="kind" value="その他" />
+                  <label for="other"> その他 </label>
+                </div>
+                
+              </dd>
+              <p class="caution">
+                  ※お問い合わせご希望の方はその他をお選びください。
+                </p>
+            </div>
+            <div class="item">
+              <dt>
+                <label for="massage">ご質問<br />お問い合わせ</label>
+              </dt>
+              <dd>
+                <textarea
+                  id="massage"
+                  name="massage"
+                  placeholder="例）"
+                ></textarea>
+              </dd>
+            </div>
+          </dl>
+          
+          <div class="privacy-box">
+            <h4>個人情報の取扱いについて</h4>
+            <div class="text-area">
+              <p>
+                ご入力いただいた個人情報は、採用選考のご連絡および当社に関する情報のゴア案内のみに利用いたします。<br />ご本人の同意なかう、第三者に提供することはありません。
+              </p>
+            </div>
+            <label class="privacy-check">
+              <input type="checkbox" />
+              上記に同意する<span class="require">必須</span>
+            </label>
+          </div>
+          <div class="btn">
+            <input type="submit" value="送信する " />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="btn-area">
+        <a class="btn btn-clear" href="recruit.html">募集要項をみてみる →</a>
+        <a class="btn" href="contact.html"
+          >ENTRY エントリーする＆<br class="sp" />お問い合わせ<span>→</span></a
+        >
+      </div>
+      <div class="flex">
+        <h1 class="site-title">
+          <a href="index.html"><img src="img/logo-w.svg" alt="くじら薬局" /></a>
+          <p>くじら薬局<span>採用サイト</span></p>
+        </h1>
+        <ul class="main-nav">
+          <li><a href="#about">くじら薬局について</a></li>
+          <li><a href="#working">働き方</a></li>
+          <li><a href="#voice">働いている人の声</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+          <li><a class="btn" href="contact.html">エントリーする →</a></li>
+        </ul>
+      </div>
+      <p>&copy; KUJIRA PHARMACY ALL Rights Reserved.</p>
+    </footer>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const nav = document.querySelector("#header .main-nav");
+
+      console.log(hamburger);
+      console.log(nav);
+
+      hamburger.addEventListener("click", function () {
+        console.log("クリックされた");
+        hamburger.classList.toggle("active");
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

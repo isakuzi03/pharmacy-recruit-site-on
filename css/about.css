@@ -1,0 +1,360 @@
+/* セクションタイトル */
+.section-title {
+  text-align: left;
+  color: #3d5b7a;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.section-title .en {
+  display: block;
+  flex-wrap: nowrap;
+  color: #76ce83;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.section-title .ja {
+  display: block;
+  font-size: 24px;
+}
+#header .main-nav .menu li:nth-of-type(1) a {
+  color: #76ce83;
+  display: block;
+  border-bottom: #3d5b7a 2px dotted;
+  padding-bottom: 3px;
+}
+/* PHILOSOPHY */
+#philosophy {
+  margin-bottom: 80px;
+}
+#philosophy .flex {
+  display: flex;
+}
+#philosophy .flex .text {
+  width: 50%;
+  padding-right: 40px;
+}
+#philosophy .flex .text .title {
+  font-size: 20px;
+  letter-spacing: 0.3em;
+  font-weight: 500;
+  line-height: 2;
+  margin-bottom: 20px;
+}
+#philosophy .flex .text p {
+  font-size: 14px;
+  line-height: 2;
+}
+#philosophy .flex .inner-flex {
+  width: 50%;
+}
+
+#philosophy .flex .inner-flex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  text-align: center;
+}
+#philosophy .flex .inner-flex .item {
+  width: calc(1 / 3);
+  letter-spacing: 0.05rem;
+  border: 1px solid #dce8f2;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #dce8f2;
+  padding: 35px 5px 0;
+
+  margin-top: 50px;
+  position: relative;
+}
+#philosophy .flex .inner-flex .item .img-area {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: solid 1px #dce8f2;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -60px;
+  left: 18%;
+  z-index: 10;
+}
+#philosophy .flex .inner-flex .item .img-area img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+#philosophy .flex .inner-flex .item .title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #3d5b7a;
+  padding-top: 30px;
+}
+#philosophy .flex .inner-flex .item p {
+  font-size: 0.75rem;
+  line-height: 2;
+}
+
+/* FEATURE */
+#features {
+  margin-bottom: 80px;
+}
+#features .feature-inner {
+  display: flex;
+  gap: 10px;
+}
+#features .feature-inner .item {
+  border: solid 1px #dce8f2;
+  box-shadow: 1px 1px 3px #dce8f2;
+  position: relative;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+#features .feature-inner .item .num {
+  width: 40px;
+  height: 30px;
+  border-radius: 10px 0 10px 0;
+  padding: 2px;
+  background-color: #3d5b7a;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+#features .feature-inner .item img {
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 10px;
+}
+#features .feature-inner .item .text {
+  padding: 0 5%;
+  font-size: 14px;
+}
+
+#features .feature-inner .item .text .title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #3d5b7a;
+}
+
+#numbers {
+  padding: 40px 5% 80px;
+  background-color: #fbfaf5;
+}
+#numbers .numbers-inner {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+#numbers .numbers-inner .number-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 6% 15%;
+  text-align: center;
+}
+#numbers .numbers-inner .number-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+#numbers .numbers-inner .number-item .label {
+  text-align: center;
+  font-weight: 500;
+}
+#numbers .numbers-inner .number-item p {
+  text-align: left;
+  font-size: 14px;
+  justify-content: center;
+}
+#numbers .numbers-inner .number-item p:last-child {
+  margin-bottom: 15px;
+}
+#numbers .numbers-inner .number-item .number {
+  font-size: 2.05rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#numbers .numbers-inner .number-item .number span {
+  font-size: 0.87rem;
+}
+
+#company-profile {
+  padding: 40px 5% 80px;
+  margin: 0 10%;
+}
+#company-profile .inner .profile-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+#company-profile .inner .profile-list dt {
+  width: 30%;
+  font-weight: 500;
+  padding: 2%;
+  border-top: 1px solid #3d5b7a;
+}
+#company-profile .inner .profile-list dt:last-of-type {
+  border-bottom: 1px solid #3d5b7a;
+}
+#company-profile .inner .profile-list dd {
+  width: 70%;
+  padding: 2%;
+  border-top: 1px solid #3d5b7a;
+}
+#company-profile .inner .profile-list dd:last-child {
+  border-bottom: 1px solid #3d5b7a;
+}
+/* ===================================
+About page SP
+=================================== */
+@media screen and (max-width: 767px) {
+  /* page header */
+  .page-header {
+    height: 260px;
+    margin-bottom: 60px;
+  }
+
+  .page-header .page-title-area {
+    top: 38%;
+    padding: 0 20px;
+  }
+
+  .page-header .page-title-area .page-title .ja {
+    font-size: 24px;
+  }
+
+  /* section title */
+  .section-title {
+    margin-bottom: 32px;
+  }
+
+  .section-title .ja {
+    font-size: 22px;
+  }
+
+  /* philosophy */
+  #philosophy {
+    margin-bottom: 70px;
+  }
+
+  #philosophy .flex {
+    flex-direction: column;
+    gap: 56px;
+  }
+
+  #philosophy .flex .text {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  #philosophy .flex .text .title {
+    font-size: 18px;
+    letter-spacing: 0.12em;
+    line-height: 2;
+  }
+
+  #philosophy .flex .text p {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  #philosophy .flex .inner-flex {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+
+  #philosophy .flex .inner-flex .item {
+    width: 100%;
+    margin-top: 0;
+    padding: 64px 24px 28px;
+  }
+
+  #philosophy .flex .inner-flex .item .img-area {
+    width: 86px;
+    height: 86px;
+    top: -43px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  #philosophy .flex .inner-flex .item .title {
+    padding-top: 0;
+  }
+
+  /* features */
+  #features {
+    margin-bottom: 70px;
+  }
+
+  #features .feature-inner {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  #features .feature-inner .item {
+    width: 100%;
+    padding-bottom: 24px;
+  }
+
+  #features .feature-inner .item img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+  }
+
+  #features .feature-inner .item .text {
+    padding: 20px 24px 0;
+  }
+
+  #features .feature-inner .item .text .title {
+    font-size: 18px;
+  }
+
+  /* numbers */
+  #numbers {
+    padding: 60px 20px 70px;
+  }
+
+  #numbers .numbers-inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #numbers .numbers-inner .number-item {
+    padding: 28px 24px;
+  }
+
+  #numbers .numbers-inner .number-item p {
+    text-align: center;
+  }
+
+  #numbers .numbers-inner .number-item .number {
+    font-size: 2.4rem;
+  }
+  #company-profile .inner .profile-list {
+    flex-direction: column;
+  }
+  #company-profile .inner .profile-list dt {
+    width: 100%;
+    padding: 5% 0;
+  }
+  #company-profile .inner .profile-list dt:last-of-type {
+    border-bottom: none;
+  }
+  #company-profile .inner .profile-list dd {
+    width: 100%;
+    padding: 5% 0;
+  }
+}

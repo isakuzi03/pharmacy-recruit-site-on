@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>くじら薬局 | 採用サイト</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/top.css" />
+
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <h1 class="site-title">
+        <a href="index.html"><img src="img/logo.svg" alt="くじら薬局" /></a>
+        <p>くじら薬局<span>採用サイト</span></p>
+      </h1>
+      <div
+        class="hamburger"
+        onclick="this.classList.toggle('active'); document.querySelector('#header .main-nav').classList.toggle('active');"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="main-nav">
+        <ul class="menu">
+          <li><a href="#about">くじら薬局について</a></li>
+          <li><a href="#working">働き方</a></li>
+          <li><a href="#voice">働いている人の声</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+          <li>
+            <a class="btn btn-clear" href="recruit.html">募集要項をみる →</a>
+          </li>
+          <li>
+            <a class="btn" href="contact.html">エントリーする<span>→</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="top">
+        <div class="text">
+          <h2 class="catchphrase">
+            地域の健康を支える<br />
+            そして<br />
+            働く人の<span>未来</span>も支える
+          </h2>
+          <p>
+            くじら薬局は、地域の皆さまの健康に寄り添い、スタッフ１人ひとりが安心して成長し、長く働ける職場づくりを大切にしています。
+          </p>
+          <div class="btn-area">
+            <a class="btn btn-clear" href="recruit.html"
+              >募集要項をみる<span>→</span></a
+            >
+            <a class="btn" href="#">エントリーする<span>→</span></a>
+          </div>
+        </div>
+        <div class="img-area">
+          <img src="img/mainvisual.png" alt="" />
+          <div class="deco"></div>
+        </div>
+      </div>
+
+      <section id="about" class="">
+        <div class="inner wrapper">
+          <div class="text">
+            <h3 class="section-title">
+              <span class="en">ABOUT</span>
+              <span class="ja">くじら薬局について</span>
+            </h3>
+            <p>
+              地域に根差した薬局として、処方せん調剤はもちろん、健康相談や在宅医療のサポートなど、幅広いサービスを提供しています。<br />私たちは、患者様とスタッフの笑顔があふれる、暖かい薬局づくりを目指しています。
+            </p>
+            <a class="btn btn-clear" href="about.html"
+              >詳しく見る<span>→</span></a
+            >
+          </div>
+          <div class="img-area">
+            <img src="img/store-front.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="pharmacy-atmosphere">
+        <h3 class="section-title">
+          <span class="en">PHARMACY ATMOSPHERE</span>
+          <span class="ja">薬局内の<br />雰囲気</span>
+        </h3>
+        <div class="img-area">
+          <ul>
+            <li class="img01"><img src="img/store-img01.png" alt="" /></li>
+            <li class="img02"><img src="img/store-img02.png" alt="" /></li>
+            <li class="img03"><img src="img/store-img03.png" alt="" /></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="working" class="wrapper">
+        <h4 class="section-title center">
+          <span class="en">PHARMACY ATMOSPHERE</span>
+          <span class="ja">くじら薬局での働き方</span>
+        </h4>
+
+        <div class="flex">
+          <div class="pharmacist">
+            <div class="inner-flex">
+              <img class="icon" src="img/icon-medicine.svg" alt="" />
+              <div class="text">
+                <p class="job">薬剤師</p>
+                <p class="description">
+                  患者さまに寄り添い、<br />専門性を活かして支える仕事
+                </p>
+              </div>
+            </div>
+            <ul>
+              <li>調剤・服薬指導</li>
+              <li>在宅医療サポート</li>
+              <li>チームでの情報共有</li>
+            </ul>
+            <a class="btn small-btn" href="working.html"
+              >詳しく見る<span>→</span></a
+            >
+
+            <img class="profile" src="img/jop-pha.png" alt="" />
+          </div>
+          <div class="clark">
+            <div class="inner-flex">
+              <img class="icon" src="img/icon-clark.svg" alt="" />
+              <div class="text">
+                <p class="job">調剤事務</p>
+                <p class="description">
+                  薬局の「顔」として、<br />みんなを支える大切な仕事
+                </p>
+              </div>
+            </div>
+            <ul>
+              <li>受付・会計</li>
+              <li>レセプト業務</li>
+              <li>在庫管理・発注など</li>
+            </ul>
+            <a
+              class="btn small-btn"
+              href="working.html#cla-working-introduction"
+              >詳しく見る<span>→</span></a
+            >
+            <img class="profile" src="img/jop-cla.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="voice" class="">
+        <h4 class="section-title center">
+          <span class="en">PHARMACY ATMOSPHERE</span>
+          <span class="ja">働く人の声</span>
+        </h4>
+
+        <div class="flex">
+          <div class="voice-01">
+            <div class="inner-flex">
+              <div class="img-area">
+                <img src="img/voice-01.png" alt="" />
+              </div>
+              <div class="text">
+                <p class="job">薬剤師（入社3年目）</p>
+                <p class="comment">
+                  地域の方との距離が近く、「ありがとう」と言われることが、やりがいに繋がっています。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="voice-02">
+            <div class="inner-flex">
+              <div class="img-area">
+                <img src="img/voice-02.png" alt="" />
+              </div>
+              <div class="text">
+                <p class="job">薬剤師（入社5年目）</p>
+                <p class="comment">
+                  子育てと両立しながら働ける環境が整っているので、長く続けられています。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="voice-03">
+            <div class="inner-flex">
+              <div class="img-area">
+                <img src="img/voice-03.png" alt="" />
+              </div>
+              <div class="text">
+                <p class="job">調剤事務（入社2年目）</p>
+                <p class="comment">
+                  未経験からのスタートでしたが、先輩方が丁寧に教えてくれるので安心して働けています。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="voice-04">
+            <div class="inner-flex">
+              <div class="img-area">
+                <img src="img/voice-04.png" alt="" />
+              </div>
+              <div class="text">
+                <p class="job">調剤事務（入社1年目）</p>
+                <p class="comment">
+                  チームの雰囲気が良く、毎日楽しく仕事ができています！成長を実感できる職場です。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq">
+        <h4 class="section-title center">
+          <span class="en">FAQ</span>
+          <span class="ja">よくある質問</span>
+        </h4>
+
+        <div class="faq-list wrapper">
+          <div class="item">
+            <details>
+              <summary>
+                <span class="question">Q</span>
+                <span>未経験でも応募できますか？</span>
+              </summary>
+              <p>
+                <span class="answer">A</span>
+                <span>できます。</span>
+              </p>
+            </details>
+          </div>
+          <div class="item">
+            <details>
+              <summary>
+                <span class="question">Q</span>
+                <span>研修制度について教えてください。</span>
+              </summary>
+              <p>
+                <span class="answer">A</span>
+                <span
+                  >一人ひとりの成長スピードにあった研修を行っています。約1か月から3か月の研修を考えています。研修が終わった後もメンターがつき、すぐに誰かに聞ける環境を整えています。</span
+                >
+              </p>
+            </details>
+          </div>
+          <div class="item">
+            <details>
+              <summary>
+                <span class="question">Q</span>
+                <span>勤務時間や休日について教えてください。</span>
+              </summary>
+              <p>
+                <span class="answer">A</span>
+                <span
+                  >営業時間は月～火曜日、木～土曜日が9時から17時半まで。水曜日と日曜日、祝日がお休みになります。</span
+                >
+              </p>
+            </details>
+          </div>
+          <div class="item">
+            <details>
+              <summary>
+                <span class="question">Q</span>
+                <span>産休・育休の取得実績はありますか？</span>
+              </summary>
+              <p>
+                <span class="answer">A</span>
+                <span>あります。</span>
+              </p>
+            </details>
+          </div>
+          <div class="item">
+            <details>
+              <summary>
+                <span class="question">Q</span>
+                <span>選考の流れを教えてください。</span>
+              </summary>
+              <p>
+                <span class="answer">A</span>
+                <span
+                  >エントリーページから応募→一週間以内にお電話かメールにてご連絡します。</span
+                >
+              </p>
+            </details>
+          </div>
+          <div class="item">
+            <details>
+              <summary>
+                <span class="question">Q</span>
+                <span>薬剤師の在宅業務について教えてください。</span>
+              </summary>
+              <p>
+                <span class="answer">A</span>
+                <span
+                  >在宅訪問はチームで実施しており、未経験でも先輩が同行し丁寧にサポートしますのでご安心ください。</span
+                >
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="btn-area">
+        <a class="btn btn-clear" href="recruit.html">募集要項をみてみる →</a>
+        <a class="btn" href="contact.html"
+          >ENTRY エントリーする＆<br class="sp" />お問い合わせ<span>→</span></a
+        >
+      </div>
+      <div class="flex">
+        <h1 class="site-title">
+          <a href="index.html"><img src="img/logo-w.svg" alt="くじら薬局" /></a>
+          <p>くじら薬局<span>採用サイト</span></p>
+        </h1>
+        <ul class="main-nav">
+          <li><a href="#about">くじら薬局について</a></li>
+          <li><a href="#working">働き方</a></li>
+          <li><a href="#voice">働いている人の声</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+          <li><a class="btn" href="contact.html">エントリーする →</a></li>
+        </ul>
+      </div>
+      <p>&copy; KUJIRA PHARMACY ALL Rights Reserved.</p>
+    </footer>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const nav = document.querySelector("#header .main-nav");
+
+      console.log(hamburger);
+      console.log(nav);
+
+      hamburger.addEventListener("click", function () {
+        console.log("クリックされた");
+        hamburger.classList.toggle("active");
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

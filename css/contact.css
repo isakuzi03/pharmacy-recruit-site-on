@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+.head-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section-title {
+  color: #3d5b7a;
+  margin-bottom: 40px;
+  text-align: center;
+}
+/* 必須 */
+.require {
+  font-size: 10px;
+  color: #fff;
+  background-color: #76ce83;
+  border-radius: 4px;
+  padding: 0.1rem 0.5rem;
+  margin-left: 10px;
+}
+form {
+  margin-bottom: 120px;
+}
+
+/* 種類選択 */
+.radio-group {
+  display: flex;
+  gap: 40px;
+}
+.radio-group .top-item-group {
+  border: 1px solid #dce8f2;
+  border-radius: 4px;
+  padding: 10px 30px;
+  display: flex;
+  gap: 20px;
+}
+.radio-group .top-item-group .tab .en {
+  color: #76ce83;
+  font-size: 10px;
+  display: block;
+}
+.radio-group .top-item-group .tab .ja {
+  display: block;
+  font-size: 16px;
+}
+
+/* フォーム全体 */
+.item {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.item dt {
+  width: 20%;
+  font-weight: 500;
+}
+.item dd {
+  width: 80%;
+}
+.item dd input:not([type="radio"]),
+.item dd textarea {
+  border: 1px solid #dce8f2;
+  border-radius: 4px;
+  padding: 10px 20px;
+}
+.item dd input[type="text"],
+.item dd input[type="email"],
+.item dd textarea {
+  width: 100%;
+}
+.item dd textarea {
+  resize: none;
+  height: 250px;
+}
+.item p.caution {
+  margin-top: 20px;
+  font-size: 14px;
+  margin-left: 20%;
+}
+
+.privacy-box{
+  padding: 28px 20px;
+  border: 1px solid #dce8f2;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.privacy-box h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.privacy-box .text-area{
+  margin: 0 100px;
+  padding: 0 100px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.privacy-check{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* 送信ボタン */
+main .btn {
+  margin: 0 auto;
+  background-color: #3d5b7a;
+  
+}
+main .btn input{
+  color: #fff;
+  margin: 0 auto;
+}
+main .btn:hover{
+  transform: none;
+  border: 1px solid #3d5b7a;
+  background-color: #fff;
+}
+main .btn:hover input{
+  color: #3d5b7a;
+}
+/* ===================================
+Contact page SP
+breakpoint: 767px
+=================================== */
+@media screen and (max-width: 767px) {
+  .head-text {
+    padding: 0 20px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 2;
+  }
+
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 32px;
+  }
+
+  form {
+    margin-bottom: 80px;
+  }
+
+  /* 種類選択 */
+  .radio-group {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .radio-group .top-item-group {
+    width: 100%;
+    padding: 18px 20px;
+    
+  }
+
+  .radio-group .top-item-group .tab .ja {
+    font-size: 15px;
+  }
+
+  /* フォーム全体 */
+  .item {
+    display: block;
+    margin-bottom: 28px;
+  }
+
+  .item dt,
+  .item dd {
+    width: 100%;
+  }
+
+  .item dt {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .item dd input:not([type="radio"]),
+  .item dd textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border-color: #dce8f2;
+  }
+
+  .item dd textarea {
+    height: 180px;
+  }
+
+  /* 希望職種 */
+  .item dd.radio-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .item dd.radio-group .item-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .item p.caution {
+    margin-left: 0;
+    margin-top: 12px;
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  /* 個人情報 */
+  .privacy-box {
+    padding: 28px 20px;
+    border: 1px solid #dce8f2;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .privacy-box h4 {
+    font-size: 18px;
+  }
+
+  .privacy-box .text-area {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    line-height: 2;
+    text-align: left;
+  }
+
+  .privacy-check {
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  /* 送信ボタン */
+  main .btn {
+    width: 100%;
+    max-width: 320px;
+    height: 56px;
+  }
+
+  main .btn input {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>くじら薬局 | 採用サイト</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/working.css" />
+
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <h1 class="site-title">
+        <a href="index.html"><img src="img/logo.svg" alt="くじら薬局" /></a>
+        くじら薬局<span>採用サイト</span>
+      </h1>
+      <div
+        class="hamburger"
+        onclick="this.classList.toggle('active'); document.querySelector('#header .main-nav').classList.toggle('active');"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="main-nav">
+        <ul class="menu">
+          <li><a href="about.html">くじら薬局について</a></li>
+          <li><a href="#working">働き方</a></li>
+          <li>
+            <a class="btn btn-clear" href="recruit.html">募集要項をみる →</a>
+          </li>
+          <li>
+            <a class="btn" href="contact.html">エントリーする<span>→</span></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="page-header">
+        <div class="page-title-area">
+          <h2 class="page-title">
+            <span class="en">WORKING STYLE</span>
+            <span class="ja">くじら薬局での働き方</span>
+          </h2>
+        </div>
+      </div>
+      <div class="tab-area">
+        <ul class="tab-list">
+          <li class="pharmacist">
+            <a href="working.html#pha-working-introduction">薬剤師</a>
+          </li>
+          <li class="clark">
+            <a href="working.html#cla-working-introduction">調剤事務</a>
+          </li>
+        </ul>
+      </div>
+
+      <section id="pha-working-introduction">
+        <div class="job-area wrapper">
+          <p class="job-name-title section-title">
+            <span class="en">PHARMACIST</span>
+            <span class="ja">薬剤師</span>
+          </p>
+          <h3 class="section-title">
+            <span class="en">SCHEDULE</span>
+            <span class="ja">薬剤師の1日の流れ</span>
+          </h3>
+          <div class="day">
+            <div class="img-area"><img src="img/work/pha-walk.png" /></div>
+            <div class="time-schedule">
+              <ul>
+                <li>
+                  <p class="title"><span class="time">08:00</span>出勤・朝礼</p>
+                  <p class="description">
+                    朝礼で1日の情報共有や確認を行います。
+                  </p>
+                </li>
+                <li>
+                  <p class="title">
+                    <span class="time">09:00</span>調剤業務・服薬指導
+                  </p>
+                  <p class="description">
+                    処方せんの調剤や、患者さまへの丁寧な服薬指導を行います。
+                  </p>
+                </li>
+                <li>
+                  <p class="title"><span class="time">12:30</span>昼休憩</p>
+                  <p class="description">
+                    スタッフ同士でリフレッシュしながら休憩をとります。
+                  </p>
+                </li>
+                <li>
+                  <p class="title">
+                    <span class="time">13:30</span>在宅準備・書類入力
+                  </p>
+                  <p class="description">
+                    在宅訪問の準備や記録、報告書の入力を行います。
+                  </p>
+                </li>
+                <li>
+                  <p class="title">
+                    <span class="time">17:00</span>カンファレンス・情報共有
+                  </p>
+                  <p class="description">
+                    チームで症例や調剤情報を共有し、連携を深めます。
+                  </p>
+                </li>
+                <li>
+                  <p class="title">
+                    <span class="time">18:00</span>閉局・業務終了
+                  </p>
+                  <p class="description">
+                    片付けや翌日の準備をし、明日の業務に備えて終了です。
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 薬剤師働き方 -->
+      <section id="pha-working">
+        <h3 class="section-title">
+          <span class="en">STYLE</span>
+          <span class="ja">薬剤師の働き方</span>
+        </h3>
+        <ul class="flex-box">
+          <li class="item">
+            <div class="title-area">
+              <div class="img">
+                <img src="img/work/calendar-search.svg" alt="" />
+              </div>
+              <p class="title">
+                <span class="top">調剤・服薬指導</span>
+                <span>薬剤師しかできない専門性の高い仕事</span>
+              </p>
+            </div>
+            <div class="inner-flex">
+              <p class="text">
+                処方箋に基づく調剤や服薬指導、薬歴管理など、薬剤師としての専門性を発揮できる環境です。
+              </p>
+              <img src="img/work/pha-working-01.png" alt="" />
+            </div>
+          </li>
+          <li class="item">
+            <div class="title-area">
+              <div class="img">
+                <img src="img/work/house.svg" alt="" />
+              </div>
+              <p class="title">
+                <span class="top">在宅医療サポート</span>
+                <span>地域包括に手助け</span>
+              </p>
+            </div>
+            <div class="inner-flex">
+              <p class="text">
+                在宅訪問や多職種連携を通じて、患者さまの生活に寄り添った薬学的サポートを行っています。
+              </p>
+              <img src="img/work/pha-working-04.png" alt="" />
+            </div>
+          </li>
+          <li class="item">
+            <div class="title-area">
+              <div class="img">
+                <img src="img/work/users-round.svg" alt="" />
+              </div>
+              <p class="title">
+                <span class="top">チームでの情報共有</span>
+                <span>チーム医療で成長できる環境</span>
+              </p>
+            </div>
+            <div class="inner-flex">
+              <p class="text">
+                定期的なカンファレンスや勉強会で学び合い、チーム全体で成長できる風土があります。
+              </p>
+              <img src="img/work/pha-working-03.png" alt="" />
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="pha-support">
+        <div class="section-area">
+          <h3 class="section-title">
+            <span class="en">SUPPORT</span>
+            <span class="ja">成長を支えるサポート体制</span>
+          </h3>
+        </div>
+
+        <div class="support-item-area">
+          <ul class="inner-flex">
+            <li>
+              <div class="title-area">
+                <div class="img">
+                  <img src="img/work/book-open.svg" alt="" />
+                </div>
+                <p class="title">研修制度</p>
+              </div>
+              <p>
+                新人研修や外部研修、勉強会を定期的に実施。スキルアップを支援します。
+              </p>
+            </li>
+            <li>
+              <div class="title-area">
+                <div class="img">
+                  <img src="img/work/user-round-plus.svg" alt="" />
+                </div>
+                <p class="title">メンター制度</p>
+              </div>
+              <p>
+                先輩薬剤師がマンツーマンでサポート安心して成長できる環境です。
+              </p>
+            </li>
+            <li>
+              <div class="title-area">
+                <div class="img">
+                  <img src="img/work/chart-no-axes-combined.svg" alt="" />
+                </div>
+                <p class="title">キャリア支援</p>
+              </div>
+              <p>認定薬剤師の取得支援など、キャリア形成を応援します。</p>
+            </li>
+            <li>
+              <div class="title-area">
+                <div class="img">
+                  <img src="img/work/hand-heart.svg" alt="" />
+                </div>
+                <p class="title">働きやすい職場</p>
+              </div>
+              <p>
+                残業時間の制限や有給取得の推奨など、ワークライフバランスを大切にしています。
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 調剤事務 -->
+      <section id="cla-working-introduction">
+        <div class="job-area wrapper">
+          <p class="job-name-title section-title">
+            <span class="en">CLARK</span>
+            <span class="ja">調剤事務</span>
+          </p>
+          <h3 class="section-title">
+            <span class="en">SCHEDULE</span>
+            <span class="ja">調剤事務の1日の流れ</span>
+          </h3>
+          <div class="day">
+            <div class="img-area"><img src="img/work/cla.png" /></div>
+            <div class="time-schedule">
+              <ul>
+                <li>
+                  <p class="title"><span class="time">08:30</span>出勤・朝礼</p>
+                  <p class="description">
+                    朝礼で1日の情報共有や確認を行います。
+                  </p>
+                </li>
+                <li>
+                  <p class="title"><span class="time">09:00</span>受付・会計</p>
+                  <p class="description">
+                    来局された患者さまの受付や会計、処方せんの確認を行います。
+                  </p>
+                </li>
+                <li>
+                  <p class="title">
+                    <span class="time">11:00</span>在庫管理・発注
+                  </p>
+                  <p class="description">
+                    医薬品や備品の在庫を確認し、必要に応じて発注を行います。
+                  </p>
+                </li>
+                <li>
+                  <p class="title"><span class="time">12:30</span>昼休憩</p>
+                  <p class="description">
+                    スタッフ同士でリフレッシュしながら休憩をとります。
+                  </p>
+                </li>
+                <li>
+                  <p class="title">
+                    <span class="time">15:00</span>レセプト業務
+                  </p>
+                  <p class="description">
+                    レセプトの作成や点検、請求業務を行います。
+                  </p>
+                </li>
+                <li>
+                  <p class="title">
+                    <span class="time">18:00</span>閉局・業務終了
+                  </p>
+                  <p class="description">
+                    閉め作業をして、1日の業務が終了になります。
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="cla-working">
+        <h3 class="section-title">
+          <span class="en">STYLE</span>
+          <span class="ja">調剤事務の働き方</span>
+        </h3>
+        <ul class="flex-box">
+          <li class="item">
+            <div class="title-area">
+              <div class="img">
+                <img src="img/work/clipboard-list.svg" alt="" />
+              </div>
+              <p class="title">
+                <span class="top">受付・会計</span>
+              </p>
+            </div>
+            <div class="inner-flex">
+              <p class="text">
+                来局された患者さまの受付や会計対応がメインのお仕事です。笑顔で丁寧な対応を心がけています。
+              </p>
+              <img src="img/work/cla-working-01.png" alt="" />
+            </div>
+          </li>
+          <li class="item">
+            <div class="title-area">
+              <div class="img">
+                <img src="img/work/monitor.svg" alt="" />
+              </div>
+              <p class="title">
+                <span class="top">事務作業で薬局をサポート</span>
+              </p>
+            </div>
+            <div class="inner-flex">
+              <p class="text">
+                レセプト業務やデータ入力など、正確さが求められる業務で薬局の運営を支えます。
+              </p>
+              <img src="img/work/cla-working-02.png" alt="" />
+            </div>
+          </li>
+          <li class="item">
+            <div class="title-area">
+              <div class="img">
+                <img src="img/work/users-round.svg" alt="" />
+              </div>
+              <p class="title">
+                <span class="top">チームで協力しながら働ける環境</span>
+              </p>
+            </div>
+            <div class="inner-flex">
+              <p class="text">
+                薬剤師や他の調剤事務と連携し、助け合いながら業務を進めることができます。
+              </p>
+              <img src="img/work/cla-working-03.png" alt="" />
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="cla-support">
+        <div class="section-area">
+          <h3 class="section-title">
+            <span class="en">SUPPORT</span>
+            <span class="ja">成長を支えるサポート体制</span>
+          </h3>
+        </div>
+
+        <div class="support-item-area">
+          <ul class="inner-flex">
+            <li>
+              <div class="title-area">
+                <div class="img">
+                  <img src="img/work/book-open.svg" alt="" />
+                </div>
+                <p class="title">研修制度</p>
+              </div>
+              <p>
+                新人研修や外部研修、勉強会を定期的に実施。スキルアップを支援します。
+              </p>
+            </li>
+            <li>
+              <div class="title-area">
+                <div class="img">
+                  <img src="img/work/user-round-plus.svg" alt="" />
+                </div>
+                <p class="title">メンター制度</p>
+              </div>
+              <p>
+                先輩事務がマンツーマンでサポート安心して成長できる環境です。
+              </p>
+            </li>
+            <li>
+              <div class="title-area">
+                <div class="img">
+                  <img src="img/work/chart-no-axes-combined.svg" alt="" />
+                </div>
+                <p class="title">キャリア支援</p>
+              </div>
+              <p>
+                資格取得の支援やステップアップの相談も可能。将来のキャリアを一緒に考えます。
+              </p>
+            </li>
+            <li>
+              <div class="title-area">
+                <div class="img">
+                  <img src="img/work/hand-heart.svg" alt="" />
+                </div>
+                <p class="title">働きやすい職場</p>
+              </div>
+              <p>
+                残業は少なめで、希望休も取りやすい環境です。プライベートとの両立をしっかりサポートします。
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="btn-area">
+        <a class="btn btn-clear" href="recruit.html">募集要項をみてみる →</a>
+        <a class="btn" href="contact.html"
+          >ENTRY エントリーする＆<br class="sp" />お問い合わせ<span>→</span></a
+        >
+      </div>
+      <div class="flex">
+        <h1 class="site-title">
+          <a href="index.html"><img src="img/logo-w.svg" alt="くじら薬局" /></a>
+          <p>くじら薬局<span>採用サイト</span></p>
+        </h1>
+        <ul class="main-nav">
+          <li><a href="#about">くじら薬局について</a></li>
+          <li><a href="#working">働き方</a></li>
+          <li><a href="#voice">働いている人の声</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+          <li><a class="btn" href="contact.html">エントリーする →</a></li>
+        </ul>
+      </div>
+      <p>&copy; KUJIRA PHARMACY ALL Rights Reserved.</p>
+    </footer>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const nav = document.querySelector("#header .main-nav");
+
+      console.log(hamburger);
+      console.log(nav);
+
+      hamburger.addEventListener("click", function () {
+        console.log("クリックされた");
+        hamburger.classList.toggle("active");
+        nav.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

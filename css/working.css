@@ -28,14 +28,20 @@ body {
   font-size: 24px;
 }
 
-.job-name-title{
+.job-name-title {
   font-weight: 600;
   text-align: left;
+  color: #fff;
+  background-color: #3d5b7a;
+  padding: 4px 24px;
+  border-radius: 0 0 25px 25px;
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 20%;
 }
-
+#cla-working-introduction .job-name-title {
+  background-color: #76ce83;
+}
 /* メインナビ装飾 */
 #header .main-nav .menu li:nth-of-type(2) a {
   color: #76ce83;
@@ -74,6 +80,8 @@ body {
   color: #fff;
   font-weight: 500;
 }
+
+/* イントロダクション */
 #pha-working-introduction,
 #cla-working-introduction {
   padding: 0 5%;
@@ -314,11 +322,12 @@ breakpoint: 767px
   .section-title .ja {
     font-size: 22px;
   }
-
+  .job-name-title {
+    left: 10%;
+  }
   /* tab */
   .tab-area {
     padding: 0 20px;
-    margin-bottom: 32px;
   }
 
   .tab-area .tab-list {

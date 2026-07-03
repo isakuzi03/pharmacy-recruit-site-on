@@ -20,15 +20,14 @@
   display: block;
   font-size: 28px;
 }
-#header .site-title p{
+#header .site-title p {
   display: block;
 }
-#header .site-title span{
+#header .site-title span {
   display: block;
   padding-left: 20px;
-  
 }
-#header .site-title span:before{
+#header .site-title span:before {
   display: none;
 }
 /* TOP */
@@ -389,6 +388,7 @@
   }
   #top {
     flex-direction: column;
+    margin-bottom: 60px;
   }
 
   #top .text {
@@ -417,6 +417,8 @@
   .btn {
     width: 100%;
     justify-content: center;
+    height: 70px;
+    border-radius: 32px;
   }
 
   /* ---------- about ---------- */
